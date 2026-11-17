@@ -1,0 +1,40 @@
+/* The logo ink (#ae3c03) and a brighter tint of that ink for the poster stock. */
+:root{--logo-ink:#ae3c03;--stock:#e37337;--ink:#1b1711;--paper:#fff3dc;--orange:var(--stock)}
+header{background:var(--stock);color:var(--ink);border:0}
+.bar{max-width:1500px;margin:auto;padding-inline:3.1%;height:clamp(64px,5.2vw,80px);position:relative}
+.bar:after{content:"";height:2px;background:var(--ink);position:absolute;left:3.1%;right:3.1%;bottom:0}
+.brand img{width:clamp(104px,10vw,144px);height:auto;object-fit:contain;mix-blend-mode:multiply}
+nav{gap:clamp(24px,4vw,70px)}nav a{font-weight:800}.visit-nav,.visit-nav:hover{background:none;color:var(--ink);padding:10px 0}.visit-nav span{margin-left:2px}nav [aria-current]{text-decoration-color:var(--ink)}
+.club-field{background:var(--stock);color:var(--ink)}
+.club-poster{max-width:1500px;margin:auto;container-type:inline-size;position:relative;isolation:isolate;overflow:hidden}
+.club-poster:before{content:"";display:block;height:52.2cqw}
+.club-folio{position:absolute;inset:1.8cqw 3.2% auto;display:flex;justify-content:space-between;gap:10px;font:700 clamp(11px,1cqw,16px)/1.4 var(--mono);letter-spacing:.035em;text-transform:uppercase}.club-folio b{margin:0 .4em}
+.club-poster h1{position:absolute;inset:4.65cqw 0 auto;text-align:center;font:400 25.1cqw/1 var(--display);letter-spacing:-.032em;white-space:nowrap}
+.club-cutout{position:absolute;z-index:1;width:41.8%;left:28.3%;bottom:-5.8cqw;transform:rotate(8deg);pointer-events:none}
+.club-order,.club-place{position:absolute;z-index:2;bottom:5.4cqw}
+.club-order{left:5.1%}.club-order h2{font:900 clamp(19px,2.05cqw,32px)/1.04 Arial,sans-serif;letter-spacing:-.035em;text-transform:uppercase}
+.club-order p{border-top:2px solid var(--ink);padding-top:.9em;margin:.7em 0 1.25em;font-size:clamp(15px,1.3cqw,20px);line-height:1.4}
+.club-button{display:inline-flex;align-items:center;justify-content:space-between;gap:1.3em;background:var(--ink);color:var(--paper);border:2px solid var(--ink);border-radius:100px;padding:10px 19px;font-weight:bold;font-size:clamp(14px,1.1cqw,18px)}
+.club-button:hover{background:var(--paper);color:var(--ink);text-decoration:none}.club-button span{font-size:1.3em}
+.club-place{right:7.6%;text-align:center;display:flex;align-items:center;flex-direction:column;line-height:1.1}
+.club-asterisk{font:700 clamp(50px,6.4cqw,100px)/1 Arial,sans-serif;margin-bottom:1.1cqw}
+.club-place small{font:700 clamp(11px,.95cqw,14px) var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.club-place strong{font:400 clamp(25px,3.15cqw,50px)/1.3 var(--display);text-transform:uppercase}.club-find{font-size:clamp(13px,1.1cqw,17px);font-weight:700;margin-top:.5em}
+.club-band{background:var(--ink);color:var(--stock)}.club-band>div{font:bold clamp(13px,1.28vw,20px)/1.35 Arial,sans-serif;letter-spacing:.04em;padding-block:17px}
+.paper .marker span{background:var(--logo-ink)}.interior>h1{border-bottom:4px solid var(--ink);padding-bottom:.16em}
+.category h2{display:inline-block;background:var(--stock);padding:5px 12px;border:0;transform:rotate(-1deg)}.dish b{color:var(--logo-ink)}
+.menu-layout aside{background:var(--stock);box-shadow:5px 5px 0 var(--ink)}.menu-layout aside img{border:1px solid var(--ink)}
+.gameday{background:var(--paper);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--stock)}.gravy{border-bottom:5px solid var(--stock)}.home-tail h2,.foot>a:first-child{color:var(--stock)}
+@media(max-width:700px){
+ .bar{height:66px;padding-inline:16px}.brand img{width:86px}.bar nav{gap:clamp(9px,3vw,22px)}.bar nav a{font-size:clamp(12px,2.8vw,15px);padding-block:13px}.visit-nav span{display:none}
+ .club-poster:before{height:0}.club-poster{display:grid;grid-template-columns:1.05fr 1fr;padding-bottom:23px}
+ .club-folio{position:static;grid-column:1/-1;padding:16px 4% 4px;font-size:10px}.club-folio>span+span{display:none}
+ .club-poster h1{position:relative;grid-column:1/-1;inset:auto;font-size:25.4cqw}
+ .club-cutout{position:relative;left:auto;bottom:auto;grid-column:1/-1;justify-self:center;width:59%;margin:-8cqw 0 -2cqw;transform:rotate(8deg);z-index:1}
+ .club-order,.club-place{position:relative;inset:auto;align-self:end}.club-order{padding-left:8%}.club-place{justify-self:end;margin:0 14% 2px 0}
+ .club-order h2{font-size:21px}.club-order h2 br{display:none}.club-order h2 br:after{content:" "}.club-order p{font-size:14px;padding-top:7px;margin:7px 0 12px}.club-order h2{max-width:15ch}
+ .club-asterisk{font-size:43px;margin-bottom:6px}.club-place strong{font-size:27px}.club-button{padding:7px 15px;min-height:42px}.club-place small{font-size:10px}
+ .club-band>div{flex-wrap:wrap;justify-content:center;gap:4px 14px;font-size:11px;padding:10px 4%;white-space:normal}.club-band i{display:none}
+}
+@media(max-width:380px){.brand img{width:71px}.club-place{margin-right:8%}.bar{padding-inline:12px}}
+@media(min-width:701px) and (max-width:1000px){.club-poster:before{height:65cqw}.club-cutout{width:46%;left:27%;bottom:-4cqw}.club-order,.club-place{bottom:4cqw}}
